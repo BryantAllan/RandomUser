@@ -1,3 +1,5 @@
+// import { renderData } from './src/utils/render.js'
+import { renderData } from './render'
 
 export const fetchData = async (url, options = {}) => {
   try {
@@ -22,27 +24,22 @@ export const fetchData = async (url, options = {}) => {
 const apiUrl1 = 'https://dog.ceo/api/breeds/list/all';
 const apiUrl2 = 'https://dog.ceo/api/breeds/image/random';
 
-const fetchDataExample = async () => {
-  try {
-    const [data1, error1] = await fetchData(apiUrl1);
-    if (error1) {
-      console.error('Error in fetching data from apiUrl1:', error1);
-    } else {
-      
-      renderData('data1', data1);
-    }
+const fetchDataEx = async () => {
 
+  // const [data1, error1] = await fetchData(apiUrl1);
+  // if (data1) renderData('data1', data1);
+  // try {
+  //   console.log(data1.message)
+   
+    
     const [data2, error2] = await fetchData(apiUrl2);
-    if (error2) {
-      console.error('Error in fetching data from apiUrl2:', error2);
-    } else {
-      
-      renderData('data2', data2);
-    }
-  } catch (error) {
-    console.error('Unexpected error:', error);
-  }
+    if (data2)  renderData('data2', data2);
+    console.log(data2)
+  //
+  // //   }
+  // } catch (error) {
+  //   console.error('Unexpected error:', error);
+  // }
 };
 
-
-fetchDataExample();
+fetchDataEx();
