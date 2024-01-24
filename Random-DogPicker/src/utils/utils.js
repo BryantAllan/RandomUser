@@ -34,10 +34,11 @@ const fetchDataEx = async () => {
     
     const [data2, error2] = await fetchData(apiUrl2);
     if (data2)  renderData('data2', data2);
+  
     console.log(data2)
   //
   // //   }
-  // } catch (error) {
+  // } catch (error) 
   //   console.error('Unexpected error:', error);
   // }
 };
