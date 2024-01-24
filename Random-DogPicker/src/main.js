@@ -1,5 +1,9 @@
 import './style.css'
-console.log("hello world");
-document.querySelector("#app").innerHTML += '<h1>Hello world</h1>';
+import { renderData } from './utils/render.js'
 
-import './utils/utils.js'
+
+const main = () => {
+// to do Invoke render functionconsole.log("hello world");
+document.querySelector("#app").innerHTML += '<h1>Hello world</h1>';
+}
+main()
