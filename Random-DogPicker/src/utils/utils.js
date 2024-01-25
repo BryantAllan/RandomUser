@@ -1,5 +1,5 @@
 // import { renderData } from './src/utils/render.js'
-import { renderData } from './render'
+import { renderData1 } from './render'
 
 export const fetchData = async (url, options = {}) => {
   try {
@@ -28,12 +28,12 @@ const fetchDataEx = async () => {
 
   // const [data1, error1] = await fetchData(apiUrl1);
   // if (data1) renderData('data1', data1);
-  // try {
+  // // try {
   //   console.log(data1.message)
    
     
     const [data2, error2] = await fetchData(apiUrl2);
-    if (data2)  renderData('data2', data2);
+    if (data2)  renderData1('data2', data2);
   
     console.log(data2)
   //

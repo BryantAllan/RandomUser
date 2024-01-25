@@ -1,5 +1,5 @@
 import './style.css'
-import { renderData } from './utils/render.js'
+import { renderData1 } from './utils/render.js'
 
 
 const main = () => {
