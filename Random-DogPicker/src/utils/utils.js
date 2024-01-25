@@ -24,6 +24,7 @@ export const fetchData = async (url, options = {}) => {
 const apiUrl1 = 'https://dog.ceo/api/breeds/list/all';
 const apiUrl2 = 'https://dog.ceo/api/breeds/image/random';
 
+
 const fetchDataEx = async () => {
 
     

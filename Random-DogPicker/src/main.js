@@ -1,5 +1,5 @@
 import './style.css'
-import { renderData1,renderData2 } from './utils/render.js'
+import { getRandom, renderData1,renderData2 } from './utils/render.js'
 
 
 const main = () => {
@@ -7,5 +7,6 @@ const main = () => {
 document.querySelector("#app").innerHTML += '<h1>Hello world</h1>';
 
 renderData2()
+getRandom('borzoi');
 }
 main()
