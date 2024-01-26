@@ -40,6 +40,4 @@ export const renderData1 = (elementId, data) => {
     document.querySelector('#app').append(div);
     }
 
-
-
   

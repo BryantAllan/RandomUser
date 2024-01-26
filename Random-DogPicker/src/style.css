@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(145, 34, 34, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 5.1;
 }
 
 #app {
@@ -84,8 +84,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #528fc5;
+    background-color: #312830;
   }
   a:hover {
     color: #747bff;
