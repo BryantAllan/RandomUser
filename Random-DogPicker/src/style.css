@@ -70,7 +70,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #131010;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -88,9 +88,28 @@ button:focus-visible {
     background-color: #312830;
   }
   a:hover {
-    color: #747bff;
+    color: #383c8d;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+.container {
+  width: 150%;
+  margin: 0px auto 90px auto;
+  padding: 10px 20px;
+  background-color: #080808;
+  text-align: center;
+}
+
+.container h1 {
+  color: #4d3737;
+  font-family: 'Proxima Nova', sans-serif; /* Replace 'YourFont' with the desired font name or font stack */
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
