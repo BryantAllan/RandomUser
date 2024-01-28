@@ -8,7 +8,7 @@ export const fetchData = async (url) => {
     if (!response.ok) throw Error(response.status);
     
     const data = await response.json();
-    console.log(data);
+    return (data);
   } catch (error) {
     console.log(`${error.name}: ${error.message}`);
   }
