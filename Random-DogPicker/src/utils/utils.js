@@ -1,42 +1,16 @@
-// import { renderData } from './src/utils/render.js'
-import { renderData1 } from './render'
+ export const allBreedUrl= "https://dog.ceo/api/breeds/list/all";
+ export const randomImgUrl = "https://dog.ceo/api/breeds/image/random";
 
-export const fetchData = async (url, options = {}) => {
+
+export const fetchData = async (url) => {
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(url)
+    if (!response.ok) throw Error(response.status);
     
-    if (!response.ok) {
-      throw new Error(`Fetch failed. ${response.status} ${response.statusText}`)
-    }
-    
-    const isJson = (response.headers.get('content-type') || '').includes('application/json')
-    let data = isJson ? await response.json() : await response.text()
-    
-    return [data, null];
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(`${error.name}: ${error.message}`);
   }
-  catch (error) {
-    console.error(error.message);
-    return [null, error];
-  }
-}
-
-
-const apiUrl1 = 'https://dog.ceo/api/breeds/list/all';
-const apiUrl2 = 'https://dog.ceo/api/breeds/image/random';
-
-
-const fetchDataEx = async () => {
-
-    
-    const [data2, error2] = await fetchData(apiUrl2);
-    if (data2)  renderData1('data2', data2);
-  
-    console.log(data2)
-
 };
 
-fetchDataEx();
-
-export const fetchAll =  async () => {
-  return await fetchData(apiUrl1)
-}
