@@ -24,9 +24,13 @@ body {
 .header {
   text-align: center;
 }
+
 .header h1 {
   margin: 0 0 10px 0;
+  font-size: 3rem; /* Adjust as needed */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* This is a playful, "cute" font */
 }
+
 .header select {
   font-size: 1rem;
 }
@@ -37,7 +41,14 @@ body {
   align-items: center;
 }
 #slideshow img {
-  border: 10px solid rgb(7, 1, 1);
+  width: 500px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  border: 15px solid rgb(7, 1, 1);
+  animation: fadeIn 3s;
+  
+  
 }
 @keyframes fadeIn {
   from {

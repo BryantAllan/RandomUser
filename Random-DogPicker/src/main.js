@@ -62,7 +62,7 @@ function createSlideshow(images) {
       currentPosition = 0;
     }
     container.innerHTML = `<img src="${images[currentPosition]}" />`;
-  }, 3000);
+  }, 4000);
 }
 
 function nextSlide() {
