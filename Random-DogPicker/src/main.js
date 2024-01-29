@@ -66,18 +66,28 @@ function createSlideshow(images) {
 }
 
 function nextSlide() {
+  // Add the fade-out class to the current slide
+  const currentSlide = document.querySelector(".slide");
+  if (currentSlide) {
+    currentSlide.classList.add("fade-out");
+  }
+
+  // Add the new slide
   document
     .getElementById("slideshow")
     .insertAdjacentHTML(
       "beforeend",
       `<div class="slide" style="background-image: url('${images[currentPosition]}')"></div>`
     );
+
+  // Remove the old slide after it has faded out
   deleteFirstPhotoDelay = setTimeout(function () {
-    document.querySelector(".slide").remove();
+    if (currentSlide) {
+      currentSlide.remove();
+    }
   }, 1000);
+
   if (currentPosition + 1 >= images.length) {
-    currentPosition = 0;
-  } else {
-    currentPosition++;
+    // ...
   }
-}
+} 
