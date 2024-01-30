@@ -24,7 +24,7 @@ function createBreedList(breedList) {
 
   document.getElementById("breed").appendChild(select);
 
-  // Add the event listener here
+ 
   select.addEventListener("change", function (event) {
     loadByBreed(event.target.value);
   });
@@ -43,20 +43,19 @@ let currentPosition = 0;
 let timer = null;
 
 function createSlideshow(images) {
-  // Clear any existing timer
+
   if (timer) {
     clearInterval(timer);
     timer = null;
   }
 
-  // Start at the first image
+
   currentPosition = 0;
 
-  // Display the first image
+
   const container = document.getElementById("slideshow");
   container.innerHTML = `<img src="${images[currentPosition]}" />`;
 
-  // Set a timer to change the image every 3 seconds
   timer = setInterval(() => {
     currentPosition++;
     if (currentPosition >= images.length) {
@@ -67,13 +66,13 @@ function createSlideshow(images) {
 }
 
 function nextSlide() {
-  // Add the fade-out class to the current slide
+ 
   const currentSlide = document.querySelector(".slide");
   if (currentSlide) {
     currentSlide.classList.add("fade-out");
   }
 
-  // Add the new slide
+
   document
     .getElementById("slideshow")
     .insertAdjacentHTML(
@@ -81,7 +80,7 @@ function nextSlide() {
       `<div class="slide" style="background-image: url('${images[currentPosition]}')"></div>`
     );
 
-  // Remove the old slide after it has faded out
+
   deleteFirstPhotoDelay = setTimeout(function () {
     if (currentSlide) {
       currentSlide.remove();
@@ -89,6 +88,6 @@ function nextSlide() {
   }, 1000);
 
   if (currentPosition + 1 >= images.length) {
-    // ...
+    
   }
 } 
