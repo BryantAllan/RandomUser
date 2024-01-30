@@ -15,8 +15,7 @@ body {
 
 body {
   font-family: Arial, sans-serif; /* Use a basic, easy-to-read font */
-  background-image: url("https://imgs.search.brave.com/wLhukeYvNx_ij5gIPjfpSmhgFztNc8-8DlGxZ_QjOsM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/NTg5OTI4Mi92ZWN0/b3IvY29va2llcy1m/b3ItYW5pbWFscy1w/YXdzLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPW1jM3RxUm1h/d1djeTNMb2J0SzRW/alFnVmQySWd2Tlox/UVc1MDIwLUozT1k9"); /* Replace with the path to your image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url('/Users/allan/Library/Mobile Documents/com~apple~CloudDocs/Development/personal-project /RandomUser/Random-DogPicker/src/images /dogbackground.png');
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center; /* Center the image */
 }
@@ -75,4 +74,23 @@ body {
 .slide.fade-out {
   animation: fadeOut 1s;
   opacity: 0;
+}
+
+
+select {
+  display: blockup;
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+/* Center align text for each option */
+option {
+  padding: 5px;
+  text-align: center;
 }

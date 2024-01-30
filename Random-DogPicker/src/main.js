@@ -38,6 +38,7 @@ async function loadByBreed(breed) {
   }
 }
 
+
 let currentPosition = 0;
 let timer = null;
 
