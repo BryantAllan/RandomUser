@@ -14,24 +14,26 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif; /* Use a basic, easy-to-read font */
-  background-image: url('/Users/allan/Library/Mobile Documents/com~apple~CloudDocs/Development/personal-project /RandomUser/Random-DogPicker/src/images /dogbackground.png');
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-position: center; /* Center the image */
+  font-family: Arial, sans-serif; 
+  background-image: url("/Users/allan/Library/Mobile Documents/com~apple~CloudDocs/Development/personal-project /RandomUser/Random-DogPicker/src/images /dogbackground.png");
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 .header {
   text-align: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #363738, rgba(255, 255, 255, 0)); 
+
+  color: #140e0e;  
+  padding: 1px 0; 
+  font-family: 'Pacifico', cursive;
 }
 
 .header h1 {
   margin: 0 0 10px 0;
-  font-size: 3rem; /* Adjust as needed */
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* This is a playful, "cute" font */
-}
-
-.header select {
-  font-size: 1rem;
+  font-size: 2.5rem; 
+  font-weight: normal; 
+  color: black; 
 }
 .slideshow {
   flex: 1;
@@ -46,8 +48,6 @@ body {
   background-position: center;
   border: 15px solid rgb(7, 1, 1);
   animation: fadeIn 3s;
-  
-  
 }
 @keyframes fadeIn {
   from {
@@ -76,21 +76,40 @@ body {
   opacity: 0;
 }
 
-
 select {
-  display: blockup;
+  display: block;
   margin: 0 auto;
   padding: 10px;
   width: 60%;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
-  font-size: medium;
+  border: 1px solid #dcdcdc;
+  background-color: #f5f5f5;
   text-align: center;
+  box-shadow: none;
+  color: #333;
+  font-family: Arial, sans-serif;
 }
 
-/* Center align text for each option */
 option {
   padding: 5px;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #040713;
+  padding: 20px 0;
+  font-weight: normal;
+}
+
+.footer-text {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
 }
